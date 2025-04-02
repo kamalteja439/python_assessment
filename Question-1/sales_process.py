@@ -45,6 +45,9 @@ df.to_sql("sales_data", conn, if_exists="replace", index=False)
 
 # Validation Queries
 def validate_data():
+    """
+    Validate the data with queries.
+    """    
     queries = {
         "Total Records": """
             SELECT COUNT(*) AS total_records 
